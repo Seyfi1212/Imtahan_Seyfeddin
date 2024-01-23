@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Pulse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+     <!-- --Navbar-- -->
+     <nav>
+        <div class="container">
+            <div class="navbar">
+                <h2>Pulse <span>.</span></h2>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li><a href="./add.html">Add</a></li>
+                </ul>
+                <div class="reserv">
+                    <span>Reservations</span>
+                    <i class="bi bi-telephone-fill"></i>
+                    <p>652-345 3222 11</p>
+                </div>
+                <div class="i"><i class="bi bi-list"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="add">
+        <form action="form">
+            <label for="name">Name:</label>
+            <p id="nameError">* Please fill name!</p>
+            <input type="text" id="name">
+            <label for="desc">Description:</label>
+            <p id="descError">* Please fill description!</p>
+            <input type="text" id="desc">
+            <label for="price">Price:</label>
+            <p id="priceError">* Please fill price!</p>
+            <input type="text" id="price">
+            <input type="submit">
+        </form>
+        <table>
+            <tr>
+                <th>ID:</th>
+                <th>Name:</th>
+                <th>Description:</th>
+                <th>Price:</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </table>
+        <div class="modal">
+            <p>* Please fill all the boxes!!!</p>
+            <i class="bi bi-x-lg" id="closeBtn"></i>
+        </div>
+    </section>
+
+     <footer>
+        <div class="container">
+            <div class="copy">
+                <p>Copyright ©2024 All rights reserved | This template is made with <i class="bi bi-suit-heart"></i> by <a href="#">Colorlib</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/add.js"></script>
+</body>
+</html>
